@@ -58,6 +58,71 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
+				<a href="#osu-wrapper" id="osu-wrapper" style="color: inherit; text-decoration: none;">
+					<h1>osu-wrapper</h1>
+				</a>
+				<p> An easy wrapper for osu API.</p>
+				<ul>
+					<li><a href="https://seizuu.github.io/osu-wrapper/">Documentation</a> <em>not yet</em></li>
+					<li><a href="https://github.com/ppy/osu-api/wiki">Official Osu! Docs</a></li>
+				</ul>
+				<a href="#installing" id="installing" style="color: inherit; text-decoration: none;">
+					<h2>Installing</h2>
+				</a>
+				<p><a href="https://nodei.co/npm/mailist"><img src="https://nodei.co/npm/mailist.png?compact=true" alt="Version"></a></p>
+				<pre><code class="language-sh"><span style="color: #008000">#npm</span>
+<span style="color: #000000">npm install osu-wrapper</span>
+
+<span style="color: #008000">#yarn</span>
+<span style="color: #000000">yarn add osu-wrapper</span>
+</code></pre>
+				<a href="#example-usage" id="example-usage" style="color: inherit; text-decoration: none;">
+					<h2>Example Usage</h2>
+				</a>
+				<a href="#getuser" id="getuser" style="color: inherit; text-decoration: none;">
+					<h3>getUser</h3>
+				</a>
+				<a href="#methods" id="methods" style="color: inherit; text-decoration: none;">
+					<h6>Methods</h6>
+				</a>
+				<ul>
+					<li><strong>getUser</strong>(option: userOpt)</li>
+				</ul>
+				<pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> { </span><span style="color: #0070C1">Osu</span><span style="color: #000000"> } = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;osu-wrapper&quot;</span><span style="color: #000000">);</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">client</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">Osu</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;ur_token&quot;</span><span style="color: #000000">);</span>
+
+<span style="color: #0000FF">async</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">user</span><span style="color: #000000">() {</span>
+<span style="color: #000000">    </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">result</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">client</span><span style="color: #000000">.</span><span style="color: #795E26">getUser</span><span style="color: #000000">({ </span><span style="color: #001080">u:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;ivoskydeav&quot;</span><span style="color: #000000">, </span><span style="color: #001080">m:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;3&quot;</span><span style="color: #000000"> });</span>
+<span style="color: #000000">    </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">result</span><span style="color: #000000">);</span>
+<span style="color: #000000">    </span><span style="color: #AF00DB">return</span><span style="color: #000000">  </span><span style="color: #001080">result</span><span style="color: #000000">;</span>
+<span style="color: #000000">}</span>
+<span style="color: #795E26">user</span><span style="color: #000000">()</span>
+</code></pre>
+				<a href="#getbeatmaps" id="getbeatmaps" style="color: inherit; text-decoration: none;">
+					<h3>getBeatmaps</h3>
+				</a>
+				<a href="#methods-1" id="methods-1" style="color: inherit; text-decoration: none;">
+					<h6>Methods</h6>
+				</a>
+				<ul>
+					<li><strong>getBeatmaps</strong>(option: beatOpt)</li>
+				</ul>
+				<pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> { </span><span style="color: #0070C1">Osu</span><span style="color: #000000"> } = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;osu-wrapper&quot;</span><span style="color: #000000">);</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">client</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">Osu</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;ur_token&quot;</span><span style="color: #000000">);</span>
+
+<span style="color: #0000FF">async</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">getBeatmaps</span><span style="color: #000000">() {</span>
+<span style="color: #000000">    </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">result</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">client</span><span style="color: #000000">.</span><span style="color: #795E26">getBeatmaps</span><span style="color: #000000">({ </span><span style="color: #001080">b:</span><span style="color: #000000"> </span><span style="color: #098658">309176</span><span style="color: #000000"> });</span>
+<span style="color: #000000">    </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">result</span><span style="color: #000000">);</span>
+<span style="color: #000000">    </span><span style="color: #AF00DB">return</span><span style="color: #000000">  </span><span style="color: #001080">result</span><span style="color: #000000">;</span>
+<span style="color: #000000">}</span>
+<span style="color: #795E26">getBeatmaps</span><span style="color: #000000">()</span>
+</code></pre>
+				<p><del>For More go to docs</del></p>
+				<a href="#nb" id="nb" style="color: inherit; text-decoration: none;">
+					<h2>Nb</h2>
+				</a>
+				<p>Actually i don&#39;t know how to write the docs, but i hope you understand, and if you have any questions, you can join my <a href="https://discord.gg/YmJEcFR">Discord Server</a></p>
+				<p>© <a href="https://github.com/iseizuu">Aizuu</a></p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">

@@ -6,6 +6,12 @@
   "files": [
     "dist/**/*"
   ],
+  "keywords": [
+    "osu",
+    "osu-wrapper",
+    "osu-api",
+    "osu-typescript"
+  ],
   "license": "MIT",
   "dependencies": {
     "node-superfetch": "^0.1.11"
