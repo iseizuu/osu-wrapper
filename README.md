@@ -1,7 +1,7 @@
 # osu-wrapper
  An easy wrapper for osu API and support intellisense.
 
-- [Documentation](https://seizuu.github.io/osu-wrapper/)
+- [Documentation](https://iseizuu.github.io/osu-wrapper/)
 - [Official Osu! Docs](https://github.com/ppy/osu-api/wiki)
 
 ## Installing
