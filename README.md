@@ -5,7 +5,7 @@
 - [Official Osu! Docs](https://github.com/ppy/osu-api/wiki)
 
 ## Installing
-[![Version](https://nodei.co/npm/mailist.png?compact=true)](https://nodei.co/npm/osu-wrapper)
+[![Version](https://nodei.co/npm/osu-wrapper.png?compact=true)](https://nodei.co/npm/osu-wrapper)
 ```sh
 #npm
 npm install osu-wrapper
