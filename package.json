@@ -1,5 +1,6 @@
 {
   "name": "osu-wrapper",
+  "description": "An easy wrapper for osu API and support intellisense.",
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
