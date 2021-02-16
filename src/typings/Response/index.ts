@@ -35,7 +35,7 @@ export interface OsuBeat
 {
     beatmapset_id: string,
     beatmap_id: string,
-    approved: string,
+    approved: "0"|"1",
     total_length: string,
     hit_length: string,
     version: string,
@@ -44,7 +44,7 @@ export interface OsuBeat
     diff_overall: string,
     diff_approach: string,
     diff_drain: string,
-    mode: string,
+    mode: "0"|"1"|"2"|"3"|string,
     count_normal: string,
     count_slider: string,
     count_spinner: string,
@@ -66,8 +66,8 @@ export interface OsuBeat
     rating: string,
     storyboard: string,
     video: string,
-    download_unavailable: string,
-    audio_unavailable: string,
+    download_unavailable: "0"|"1",
+    audio_unavailable: "0"|"1",
     playcount: string,
     passcount: string,
     packs: string,
@@ -78,7 +78,7 @@ export interface OsuBeat
 }
 
 export interface OsuScores {
-    score_id: string,
+    score_id: string|null,
     score: string,
     username: string,
     maxcombo: string,
@@ -88,13 +88,13 @@ export interface OsuScores {
     countmiss: string,
     countkatu: string,
     countgeki: string,
-    perfect: string,
+    perfect: "0"|"1",
     enabled_mods: string,
     user_id: string,
     date: string,
     rank: string,
-    pp: string,
-    replay_available: string,
+    pp: string|null,
+    replay_available: "0"|"1",
 }
 
 export interface OsuBest {
