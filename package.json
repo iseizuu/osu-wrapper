@@ -1,7 +1,7 @@
 {
   "name": "osu-wrapper",
   "description": "An easy wrapper for osu API and support intellisense.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Iseizuu",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -28,7 +28,7 @@
   },
   "repository": "https://github.com/iseizuu/osu-wrapper.git",
   "bugs": {
-    "url": "https://github.com/VeguiIzumi/randomyui/issues"
+    "url": "https://github.com/iseizuu/osu-wrapper/issues"
   },
-  "homepage": "https://github.com/VeguiIzumi/randomyui#readme"
+  "homepage": "https://github.com/iseizuu/osu-wrapper#readme"
 }

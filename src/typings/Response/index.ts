@@ -31,8 +31,7 @@ export interface OsuUser {
     ]
 }
 
-export interface OsuBeat 
-{
+export interface OsuBeat {
     beatmapset_id: string,
     beatmap_id: string,
     approved: "0"|"1",
