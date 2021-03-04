@@ -14,7 +14,7 @@ import {
     scoreOpt,
     userOpt } from "./typings";
 
-export default class Osu {
+export class Osu {
     private readonly baseUrl = "https://osu.ppy.sh/api";
     private token: string|null = null;
     public constructor (token: string) {
