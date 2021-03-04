@@ -15,7 +15,7 @@ yarn add osu-wrapper
 ```
 
 ## Example Usage
-- grab your own token [HERE](https://osu.ppy.sh/p/api/)
+- grab your own token at [HERE](https://osu.ppy.sh/p/api/)
 
 ### getUser
 ###### Methods
@@ -51,9 +51,9 @@ async function getBeatmaps() {
 getBeatmaps()
 ```
 
-~~For more go to docs~~
+~~For more information go to documentation~~
 
-## Nb
-Actually i don't know how to write the docs, but i hope you understand, and if you have any questions, you can join my [Discord Server](https://discord.gg/YmJEcFR)
+## n.b
+Actually i don't know how to write the documentation, but i hope you will understand and if you have any question feel free to join my [Discord Server](https://discord.gg/5DKMn8TMFx)
 
 © [Aizuu](https://github.com/iseizuu)
